@@ -1,6 +1,7 @@
 'use strict';
 var assert = require('assert');
 var isLrc = require('../');
+var fs = require('fs');
 
 it('should detect LRC if it has format : [mm:ss.xx]', function() {
   assert(isLrc('[00:12.00]Naku Penda Piya-Naku Taka Piya-Mpenziwe'));
@@ -23,7 +24,21 @@ it('should detect LRC if it contains any of the standard LRC tags', function() {
   assert(isLrc('[length: 2:23]'));
   assert(isLrc('[offset: +60]'));
   assert(isLrc('[by: chentsulin]'));
-  assert(isLrc('[re:player ]'));
+  assert(isLrc('[re:player]'));
   assert(isLrc('[ve:v0.1.0]'));
 });
 
+it('should not be LRC if it dose not contain standard LRC tags', function() {
+  assert( ! isLrc('[tt:Let\'s Twist Again]'));
+  assert( ! isLrc('[z:Chubby Checker oppure  Beatles, The]'));
+});
+
+it('should detect LRC if file is standard LRC format', function() {
+  assert(isLrc(fs.readFileSync(__dirname + '/sources/test.lrc')));
+});
+
+it('should not be LRC if file is other format', function() {
+  assert( ! isLrc(fs.readFileSync(__dirname + '/sources/test.html')));
+  assert( ! isLrc(fs.readFileSync(__dirname + '/sources/test.json')));
+  assert( ! isLrc(fs.readFileSync(__dirname + '/sources/test.xml')));
+});
