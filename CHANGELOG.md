@@ -2,6 +2,6 @@
 
 ## Features
 
-- ** regexp: ** for [mm:ss.xx] format.
-- ** tags: ** ti, ar, au, al, length, offset, by, re, ve
+- **regexp:** for [mm:ss.xx] format.
+- **tags:** ti, ar, au, al, length, offset, by, re, ve.
 
