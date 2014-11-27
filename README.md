@@ -1,6 +1,6 @@
 # is-lrc [![Build Status](https://travis-ci.org/chentsulin/is-lrc.svg)](https://travis-ci.org/chentsulin/is-lrc)
 
-> Check if a string is LRC
+> Check if a string is [LRC format](http://en.wikipedia.org/wiki/LRC_(file_format))
 
 ## Install
 
@@ -27,4 +27,4 @@ isLrc('↑ ↑ ↓ ↓ ← → ← → B A');
 ```
 
 ## License
-MIT © [Chen-Tsu Lin](https://github.com/chentsulin)
+MIT © [C. T. Lin](https://github.com/chentsulin)
