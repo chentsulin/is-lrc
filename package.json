@@ -1,6 +1,6 @@
 {
   "name": "is-lrc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Check if a string is LRC",
   "license": "MIT",
   "repository": "chentsulin/is-lrc",
