@@ -1,6 +1,9 @@
-# is-lrc [![Build Status](https://travis-ci.org/chentsulin/is-lrc.svg)](https://travis-ci.org/chentsulin/is-lrc)
+# is-lrc
 
-> Check if a string is [LRC format][1]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+
+> Check if a string is [LRC format][lrc-format]
 
 ## Install
 
@@ -29,4 +32,8 @@ isLrc('↑ ↑ ↓ ↓ ← → ← → B A');
 ## License
 MIT © [C. T. Lin](https://github.com/chentsulin)
 
-  [1]: http://en.wikipedia.org/wiki/LRC_(file_format)
+[npm-image]: https://img.shields.io/npm/v/is-lrc.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/is-lrc
+[travis-image]: https://travis-ci.org/chentsulin/is-lrc.svg
+[travis-url]: https://travis-ci.org/chentsulin/is-lrc
+[lrc-format]: http://en.wikipedia.org/wiki/LRC_(file_format)
