@@ -39,4 +39,6 @@ MIT © [C. T. Lin](https://github.com/chentsulin)
 [travis-url]: https://travis-ci.org/chentsulin/is-lrc
 [coveralls-image]: https://img.shields.io/coveralls/chentsulin/is-lrc.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/chentsulin/is-lrc
+[david_img]: https://img.shields.io/david/chentsulin/is-lrc.svg
+[david_site]: https://david-dm.org/chentsulin/is-lrc
 [lrc-format]: http://en.wikipedia.org/wiki/LRC_(file_format)
